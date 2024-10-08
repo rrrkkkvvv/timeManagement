@@ -10,7 +10,6 @@ export const useTimer = (timer: TimerType, updateTimer: (time:number)=>void) => 
         if(timer.isStarted){
 
         intervalRef.current = window.setInterval(()=>{
-                console.log(timer)
                 updateTimer(timer.time + 1);
         }, 1000);
     

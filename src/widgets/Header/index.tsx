@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header>
                 {
-                    pathname === "/" && 
+                    pathname === "/timeManagement" && 
                     <div className="current-timer-wrapper">
                         <span>
                             Last starded:
@@ -40,9 +40,9 @@ const Header = () => {
             
 
         <button>
-            <Link className="nav-link"  to={ pathname === "/" ? "/analytics" : "/" }>
+            <Link className="nav-link"  to={ pathname === "/timeManagement" ? "/timeManagement/analytics" : "/timeManagement" }>
             {
-                pathname === "/" ? "Analitics page >" : "< Main page"
+                pathname === "/timeManagement" ? "Analitics page >" : "< Main page"
             }
             </Link>
         </button>

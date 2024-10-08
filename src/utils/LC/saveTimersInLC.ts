@@ -52,7 +52,6 @@ export const saveTimers = (timers: TimerType[]) =>{
             timersToLC[timer.title].years[year][month][day] += timer.time;
         });
     
-        // console.log(timersToLC)
         localStorage.setItem('timers', JSON.stringify(timersToLC));
 
     }

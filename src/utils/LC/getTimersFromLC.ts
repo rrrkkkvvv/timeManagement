@@ -9,7 +9,6 @@ export const getTimers = ():TimerType[]  =>{
         Object.keys(parsedTimers).forEach((title)=>{
             result.push({title: title, time:0, isStarted: false})
         })
-        // console.log(parsedTimers)
         return result;
     }else{
         return [];
